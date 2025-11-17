@@ -39,21 +39,16 @@
     transition: 0.3s ease;
 }
 
-/* Correct Answer Style */
 .container ul li.correct {
     background: #dffff2;
     border: 3px solid #19d78b;
-    /* Green border */
 }
 
-/* Incorrect Answer Style */
 .container ul li.incorrect {
     background: #FFEBEB;
     border: 3px solid #e20e0e;
-    /* Red border */
 }
 
-/* Next Button */
 .container button {
     margin: auto;
     width: 250px;
@@ -72,8 +67,50 @@
     opacity: 0.9;
 }
 
-/* Question Index */
 .container .index {
     margin: auto;
     font-size: 18px;
+}
+
+.container .current-score {
+    margin: auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #553f9a;
+}
+
+.score {
+    text-align: center;
+    font-size: 24px;
+    color: #553f9a;
+}
+
+.score h2 {
+    margin-bottom: 15px;
+}
+
+.score p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Existing CSS remains the same */
+
+/* Reset button */
+.reset-btn {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background: #553f9a;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+    opacity: 0.9;
 }
