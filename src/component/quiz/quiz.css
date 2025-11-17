@@ -1,5 +1,5 @@
 .container {
-    width: 600px;
+    width: 800px;
     margin: auto;
     margin-top: 50px;
     background: white;
@@ -22,6 +22,10 @@
     font-weight: 500;
 }
 
+.container ul {
+    padding: 0;
+}
+
 .container ul li {
     display: flex;
     align-items: center;
@@ -32,8 +36,24 @@
     margin-bottom: 20px;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
+/* Correct Answer Style */
+.container ul li.correct {
+    background: #dffff2;
+    border: 3px solid #19d78b;
+    /* Green border */
+}
+
+/* Incorrect Answer Style */
+.container ul li.incorrect {
+    background: #FFEBEB;
+    border: 3px solid #e20e0e;
+    /* Red border */
+}
+
+/* Next Button */
 .container button {
     margin: auto;
     width: 250px;
@@ -44,8 +64,15 @@
     font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
 }
 
+.container button:hover {
+    opacity: 0.9;
+}
+
+/* Question Index */
 .container .index {
     margin: auto;
     font-size: 18px;
